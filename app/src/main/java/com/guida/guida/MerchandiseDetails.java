@@ -38,12 +38,12 @@ public class MerchandiseDetails extends AppCompatActivity implements OnPageChang
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.merchandise_details);
+        getSupportActionBar().hide();
         ViewGroup group = (ViewGroup)findViewById(R.id.viewGroup);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
         //载入图片资源ID
-        imgIdArray = new int[]{R.drawable.handbag1, R.drawable.handbag2, R.drawable.handbag3, R.drawable.handbag1,
-                R.drawable.handbag2};
+        imgIdArray = new int[]{R.drawable.handbag3, R.drawable.handbag2, R.drawable.handbag3, R.drawable.handbag2};
 
 
         //将点点加入到ViewGroup中
